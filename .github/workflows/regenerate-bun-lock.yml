@@ -6,6 +6,7 @@ on:
     paths:
       - "app/package.json"
       - "app/packages/**/package.json"
+      - ".github/workflows/regenerate-bun-lock.yml"
   workflow_dispatch:
 
 permissions:
