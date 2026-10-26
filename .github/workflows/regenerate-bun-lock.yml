@@ -48,3 +48,9 @@ jobs:
           fi
           git commit -m "Regenerate Bun lockfile for aligned React types"
           git push origin HEAD:main
+
+      - name: Verify frozen install and TypeScript
+        working-directory: app
+        run: |
+          bun install --frozen-lockfile
+          bun run typecheck
