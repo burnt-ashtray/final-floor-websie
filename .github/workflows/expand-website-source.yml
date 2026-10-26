@@ -1,0 +1,51 @@
+name: Expand website source
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "6e089240-92d7-426b-ab5a-d79f20d9114a.zip"
+      - ".github/workflows/expand-website-source.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  expand-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Extract app into the repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive="6e089240-92d7-426b-ab5a-d79f20d9114a.zip"
+          test -f "$archive"
+          mkdir -p .source-extract
+          unzip -q -o "$archive" -d .source-extract
+          source_dir=".source-extract/website-5fcdd6ddd0f418c6d0991e5b/app"
+          test -f "$source_dir/package.json"
+          rm -rf app
+          mkdir -p app
+          cp -a "$source_dir/." app/
+          test -f app/package.json
+          echo "Extracted $(find app -type f | wc -l) source files into app/"
+
+      - name: Commit expanded source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/
+          if git diff --cached --quiet; then
+            echo "app/ already matches the archive; no commit needed."
+            exit 0
+          fi
+          git commit -m "Expand FINAL FLOOR website source into app/"
+          git push
