@@ -7,6 +7,6 @@ The website source is now extracted into **`app/`**. The runnable project is at 
 - **Deploy script:** `bun run deploy`
 - The original ZIP is retained at the repository root as a backup.
 
-The Bun lockfile was regenerated with Bun 1.4.4 and verified in a clean checkout using `bun install --frozen-lockfile`.
+The Bun lockfile was regenerated with Bun 1.4.4 and verified in a clean checkout using `bun install --frozen-lockfile`. Workspace packages now align on React type versions (`@types/react` `^19.2.15` and `@types/react-dom` `^19.2.3`) to avoid incompatible duplicate React refs during typechecking.
 
 The original Higgsfield production URL returned HTTP 401 to unauthenticated requests. Exporting the source does not itself change that hosting gate; a successful public deployment must be completed in the hosting account.
