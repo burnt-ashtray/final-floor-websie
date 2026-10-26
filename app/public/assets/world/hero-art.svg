@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+ <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".16" stop-color="#8e9299"/><stop offset=".28" stop-color="#f9f9fb"/><stop offset=".42" stop-color="#34373c"/><stop offset=".55" stop-color="#dfe1e6"/><stop offset=".73" stop-color="#666a72"/><stop offset=".88" stop-color="#f7f8fa"/><stop offset="1" stop-color="#4d5056"/></linearGradient>
+ <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#292a2e"/><stop offset=".5" stop-color="#09090b"/><stop offset="1" stop-color="#18191d"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#45474d" stop-opacity=".62"/><stop offset=".48" stop-color="#202126" stop-opacity=".24"/><stop offset="1" stop-color="#08090b" stop-opacity="0"/></radialGradient>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values=".3 0 0 0 0 .3 0 0 0 0 .3 0 0 0 0 .3 0 0 0 0 0 0 0 .12 0"/></filter>
+ <g id="link"><rect x="-45" y="-24" width="90" height="48" rx="23" fill="#0a0a0c" stroke="url(#steel)" stroke-width="14"/><path d="M-28 -10 Q0 -28 28 -9" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="3"/><path d="M-30 12 Q0 28 28 11" fill="none" stroke="#030304" stroke-width="4"/></g>
+</defs>
+<rect width="1600" height="1000" fill="#09090b"/><ellipse cx="815" cy="410" rx="660" ry="550" fill="url(#halo)"/>
+<path d="M180 1000 L260 490 Q300 390 460 345 L585 280 L1010 280 L1140 350 Q1300 420 1330 570 L1460 1000Z" fill="url(#cloth)" stroke="#414248" stroke-width="3"/>
+<path d="M590 290 Q800 400 1005 290" fill="none" stroke="#686a70" stroke-width="7"/><path d="M612 304 Q800 398 984 304" fill="none" stroke="#08080a" stroke-width="12"/>
+<path d="M330 550 Q390 720 370 950 M1250 500 Q1170 700 1210 960" fill="none" stroke="#35363c" stroke-width="4" opacity=".65"/>
+<!-- heavy chain looping from collar -->
+<g transform="translate(800 270) rotate(5)"><use href="#link" x="-150" y="65" transform="rotate(30 -150 65)"/><use href="#link" x="-220" y="110" transform="rotate(24 -220 110)"/><use href="#link" x="-265" y="175" transform="rotate(10 -265 175)"/><use href="#link" x="-275" y="245" transform="rotate(-8 -275 245)"/><use href="#link" x="-250" y="315" transform="rotate(-20 -250 315)"/><use href="#link" x="-200" y="370" transform="rotate(-28 -200 370)"/><use href="#link" x="-130" y="410" transform="rotate(-38 -130 410)"/><use href="#link" x="-55" y="430" transform="rotate(-45 -55 430)"/><use href="#link" x="20" y="430" transform="rotate(45 20 430)"/><use href="#link" x="100" y="410" transform="rotate(38 100 410)"/><use href="#link" x="170" y="370" transform="rotate(28 170 370)"/><use href="#link" x="220" y="315" transform="rotate(20 220 315)"/><use href="#link" x="245" y="245" transform="rotate(8 245 245)"/><use href="#link" x="235" y="175" transform="rotate(-10 235 175)"/><use href="#link" x="190" y="110" transform="rotate(-24 190 110)"/><use href="#link" x="120" y="65" transform="rotate(-30 120 65)"/></g>
+<!-- pendant shadow and star -->
+<ellipse cx="800" cy="675" rx="175" ry="42" fill="#000" opacity=".8" filter="url(#shadow)"/>
+<g transform="translate(800 655)"><path d="M0 -195 L28 -42 L148 0 L28 34 L0 190 L-28 34 L-148 0 L-28 -42Z" fill="#08080a" stroke="#202126" stroke-width="24"/><path d="M0 -195 L28 -42 L148 0 L28 34 L0 190 L-28 34 L-148 0 L-28 -42Z" fill="url(#steel)" stroke="#d6d8de" stroke-width="4"/><path d="M0 -156 L15 -22 L114 0 L15 22 L0 150 L-15 22 L-114 0 L-15 -22Z" fill="#111215" stroke="#f6f6f8" stroke-width="2"/><circle r="31" fill="#08090b" stroke="url(#steel)" stroke-width="8"/><circle r="9" fill="#fff"/></g>
+<!-- fine metal scratch lines -->
+<g stroke="#e9e9ec" stroke-opacity=".2" stroke-width="2"><path d="M270 460 l150 100 M1180 440 l-160 90 M440 840 l90 -20 M1080 830 l80 35"/><path d="M630 550 l-80 140 M980 520 l90 130"/></g>
+<rect width="1600" height="1000" filter="url(#grain)" opacity=".22"/>
+</svg>

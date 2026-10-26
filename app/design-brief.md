@@ -1,0 +1,26 @@
+# FINAL FLOOR / Design Brief
+
+- **Design read:** An underground metal x hip-hop label for people who live between the pit, the booth, and the street; severe, tactile, nocturnal, self-possessed.
+- **Concept spine:** The Lower Stage. The visitor descends through a blackened venue, meets the emblem as a piece of forged hardware, then finds the garments and the live culture that surrounds them.
+- **Delivery tier:** cinema. A slow, scroll-controlled product film is the hero mechanic; chapters feel like the lighting cues of a live set.
+- **Animation mode:** animated-website
+- **Journey shape:** single-shot. One continuous product reveal keeps the chain, garment, and emblem inside one coherent world, avoiding seams for a single brand story.
+- **Journey:** 1) A chrome glint appears in darkness: “Culture lives below.” 2) The lens tracks the chain: “Made to wear loud.” 3) The camera reveals the fabric: “For the underground.” 4) The closing beauty frame holds the emblem: “Meet us at the floor.”
+- **World grammar:** near-black seamless industrial studio, one centered silver chain-and-garment subject, cold white key light from upper left, graphite fill, brushed chrome and heavyweight black cotton, no text inside footage, restrained muted crimson reflection only.
+- **Mobile framing:** all product detail remains center-safe; keep the pendant and tee within the middle 60% of frame; use a lighter portrait-safe encode.
+- **Delivery budget:** desktop film target under 32 MiB, mobile film under 16 MiB.
+- **Locked palette:** #111214, #F5F5F5, #A7A7AD, #9F3444. Monochrome chrome is the material world; the muted crimson appears only as a small signal accent, not a glow.
+- **Locked type:** Cabinet Grotesk for expressive display, IBM Plex Mono for utility labels and metadata. All-caps headlines, tight leading, tracking used sparingly.
+- **Theme paradigm:** Deep Dark with a forged-metal material twist.
+- **Background character:** matte black cotton and smoked steel, subtle photographic texture, no gradients as a substitute for imagery.
+- **Typography character:** condensed editorial grotesk with monospaced utility details.
+- **Hero architecture:** asymmetric split, headline left, cinematic centered product film beneath chapter copy, compact nav.
+- **Section system:** product contact sheet, live-event panorama, manifesto strip, direct-contact footer.
+- **Signature components:** razor-thin borders, crosshair star emblem, hardware-style product frames, oversized cropped typography.
+- **Narrative spine:** descent from stage atmosphere to emblem to merch to community.
+- **Second-read moment:** the crosshair-star mark repeats as pendant, tee chest print, and navigation cursor.
+- **Section plan:** Hero / film chapters; Merch / horizontal product rail; Events / full-width live poster strip; About / manifesto and visual texture; Contact / stark utility footer. No consecutive repeated layout family.
+- **Asset plan:** custom vector hero illustration, generated-style cinematic motion film and exact first-frame poster, mobile film and poster, tee and chain product illustrations, event scene plate, emblem, favicon, OG cover, per-section design boards in refs/.
+- **CTA inventory:** “Shop merch” (filled white block, directional arrow); “Upcoming events” (outline block); “View details” (underlined text link); “Join the floor” (compact arrow link).
+- **Interaction notes:** Product buttons add items to a visible cart count; navigation anchors scroll to sections; contact form provides a clear confirmation state. No checkout/payment provider has been configured, so the cart is a product-interest/cart preview, not a payment checkout.
+- **Accessibility:** semantic landmarks, focus-visible outlines, reduced-motion fallback, readable contrast, descriptive image labels, mobile nav wrapping and stack behavior.
