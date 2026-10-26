@@ -1,5 +1,9 @@
 # FINAL FLOOR website
 
-The website source archive is `6e089240-92d7-426b-ab5a-d79f20d9114a.zip`.
+The website source is now extracted into **`app/`**. The runnable project is at `app/package.json`, with app code under `app/src/`, Vite config at `app/vite.config.ts`, and Worker config at `app/wrangler.jsonc`.
 
-The source code is contained inside `website-5fcdd6ddd0f418c6d0991e5b/app/` within the archive. Extract that folder and its contents to the repository root before deploying. Cloudflare Workers Builds cannot build the project while the repository contains only the ZIP archive.
+- **Cloudflare Workers Builds root directory:** `/app`
+- **Build script:** `npm run build` (the project includes `bun.lock`; use Bun if the build environment detects it)
+- The original ZIP is retained at the repository root as a backup.
+
+The original Higgsfield production URL returned HTTP 401 to unauthenticated requests. Exporting the source does not itself change that hosting gate; a successful public deployment must be completed in the hosting account.
